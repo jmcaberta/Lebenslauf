@@ -4,28 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
     <title>Lebenslauf</title>
 </head>
 <body>
-    <header class="header" id="inicio">
-        <img src="./resourses/Perfil.jpeg" alt="Foto de [Juan Miguel Caberta Ramírez]" class="perfil">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
-        <div class="container head">
+    <header>
+        <div class="container" id="container-img">
+            <img src="./resources/Perfil.jpeg" alt="Foto de [Juan Miguel Caberta Ramírez]" class="perfil"> 
             <h1>Ing. Juan Miguel Caberta Ramírez</h1>
+        </div>      
+        <div class="container header">            
             <link rel="stylesheet" href="./styles.css">
             <p>Software Developer and Data Scientist</p>
-            <p>email: <a href="mailto:caber_t@icloud.com">caber_t@icloud.com</a></p>
+            <div>
+                <Address>
+                    Beethovenstraße 46, 26386 Wilhelmshaven Deutschland
+                </Address>
+                <p>email: <a href="mailto:caber_t@icloud.com">caber_t@icloud.com</a></p>
+            </div>            
         </div>
        
     </header>
     <main>
-        <section class="education">
+        <section class="education-section">
             <h2>Education</h2>
-            <div class="education">
-                <h3>Data Science Insttitut</h3>
-            </div>        
+            <hr>
+            <div class="container">
+                <h3 class="education-title">Data Science Weiterbildung</h3>
+                <div class="container" id="education-grid">
+                    <div class="container" id="column1">
+                        <p class="text-date">Mai 2023 - September 2023</p> 
+                    </div>               
+                    <div class="container" id="column2">
+                        <h4>Data Science Institut, Berlin Deutschland (Fernstudienmodell).</h4>
+                        <p class="education-desc">Objektorientierte Programmierung in Python sowie Techniken der Datenanalyse, 
+                            Entwicklung von überwachten und unüberwachten Lernmodellen, logistischen Regressionsmodellen, linearer Regression 
+                            und Clustering mit den Python-Bibliotheken: Numpy, Pandas, Scikit-learn, Matplotlib und Seaborn. Ergänzt durch den Einsatz 
+                            von Tools wie Excel, Tableau und SQL-Workbench.                           
+                        </p>
+                        
+                    </div>                  
+                </div>    
+            </div>
+            <div class="container">
+                <h3 class="education-title">Computersystemingenieur</h3>
+                <div class="container" id="education-grid">
+                    <div class="container" id="column1">
+                        <p class="text-date">Mai 2021 - Mai 2024</p> 
+                    </div>               
+                    <div class="container" id="column2">
+                        <h4>Universität Latinoamericana, Mexiko (Fernstudienmodell).</h4>
+                        <p class="education-desc">Universitätsstudium mit Schwerpunkt in Informatik, computergestützten Systemen und Softwareentwicklung.
+                            Tiefgehende Kenntnisse in der Konzeption, Entwicklung und Implementierung von Softwarelösungen.
+                           
+                        </p>
+                        
+                    </div>                  
+                </div>    
+            </div>               
+                
         </section>  
         <section class="emplooyees">
             <h2>Arbeitserfahrung</h2>

@@ -15,9 +15,7 @@ header img{
     height: 200px;
     border-radius: 50%;
     border: 1px solid #7a7a7a;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-
-    
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);    
 }
 header h1 {
     color:#7a7a7a;
@@ -25,11 +23,50 @@ header h1 {
 @keyframes pulsar {
     0%   { transform : scale(1) }
     50% { transform: scale(1.05) }
-    100% {transform:scale (1)}
+    100% {transform:scale(1)}
 }
 img:hover {
     animation: pulsar 1.5s infinite;
 }
 section{
     padding: 20px;
+}
+.container{
+    text-overflow: ellipsis;
+  
+   
+}
+#education-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: 1px solid #7a7a7a;
+}
+#column1{
+    width: 350px;
+    padding-left: 10%;
+    border: 1px solid;
+
+}
+#column2{
+    width: 1500px;
+    padding-left: 3%;    
+    border: 1px solid
+    
+}
+.education-title{
+    padding-left: 10px;;
+}
+h2{
+    text-align: center;
+}
+h4{
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.education-desc{
+    margin-top: 0;
+}
+.text-date{
+    margin-top: 5px;
 }
