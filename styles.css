@@ -1,0 +1,35 @@
+body{
+    font-family: 'PT Sans Caption', sans-serif;
+
+}
+header{
+    border: 1px solid #7a7a7a;   
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #7a7a7a;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+    
+}
+header h1 {
+    color:#7a7a7a;
+}
+@keyframes pulsar {
+    0%   { transform : scale(1) }
+    50% { transform: scale(1.05) }
+    100% {transform:scale (1)}
+}
+img:hover {
+    animation: pulsar 1.5s infinite;
+}
+section{
+    padding: 20px;
+}
