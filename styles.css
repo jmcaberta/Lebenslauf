@@ -31,28 +31,11 @@ img:hover {
 section{
     padding: 20px;
 }
-.container{
-    text-overflow: ellipsis;
-  
-   
-}
-#education-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    border: 1px solid #7a7a7a;
-}
-#column1{
-    width: 350px;
-    padding-left: 10%;
-    border: 1px solid;
 
-}
-#column2{
-    width: 1500px;
-    padding-left: 3%;    
-    border: 1px solid
-    
+#education-grid, #work-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;    
 }
 .education-title{
     padding-left: 10px;;
@@ -60,12 +43,20 @@ section{
 h2{
     text-align: center;
 }
+h3{
+    text-align: center;
+}
 h4{
     margin-bottom: 0;
     margin-top: 5px;
 }
-.education-desc{
+.education-desc, .work-desc{
     margin-top: 0;
+}
+.address{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: baseline;
 }
 .text-date{
     margin-top: 5px;
