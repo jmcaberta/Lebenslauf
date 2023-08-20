@@ -1,0 +1,147 @@
+Buenas noches profesor, disculpe que no desarrolle un sitio web con diferentes paginas, pero estoy en medio de un proyecto de ciencia de datos que debo terminar en un par de seamanas,
+esto me esta llevando la mayor parte de mi tiempo pues es priyecto final para mi titulo de certificacion. 
+
+
+El proyecto que desarrolle es mi Curriculum vitae en idioma aleman ya que es el pais donde radico y pense en ir preparandolo para un futuro no muy lejano, este lo complementare la semana siguiente.
+El proyecto lo ejecuto directamete desde Visual Studio Code con Live Server pero lo intentare por medio de MAMP ya que WAMP no corre en OS y Apple no me permite la instalacion de XAMPP por no poder
+corroborar la ausencia de software malisioso dentro de el programa de instalacion.
+
+Para la instalacion de MAMP, ingrese a la pagina www.mamp.info/de/mac/ de  y descarge la version para OS 6.8
+una vez descargado el software solo tengo que dar click en el archivo descargado y comienza la instalacion
+1 Leo la licencia y doy continuar.
+2 Selecciono el destino de el cual sera en mi disco Macintosh HD y será la instalacion estándar y doy click en continuar.
+3 Autirizo la istalacion con mi contraseña de usuario administrador, en mi usuario es unico asi que soy tambien administrador.
+4 La instalacion se llevo a cabo y listo doy click en cerrar.
+5 Abro el programa MAMP y escojo el nombre, el tipo de web server en mi caso elegi apache y la version de PHP 8.2.0
+6 Enciendo el Servidor y me abre una pagina en el mi navegador, en mi caso Safari.
+7 Guardo la carpeta de mi proyecto dentro de la carpeta htdocs.
+8 En el navegador escribo el nombre de mi carpeta despues de http://localhost/Desarrolloweb doy enter y se abre automaticamente mi achivo index.html
+
+La estructura de mi pagina es muy sencilla:
+
+
+1. <html>: 
+   - Este es el elemento raíz que encapsula todos los componentes del documento web.
+   - Establece el idioma del contenido como inglés (lang="en").
+
+2. <head>: 
+   - Aloja los metadatos del documento y enlaces a recursos externos.
+
+   Componentes dentro de <head>:
+   - <meta>: Define metadatos específicos del documento.
+     - Charset: Define la codificación de caracteres, permitiendo la correcta interpretación de caracteres especiales.
+     - X-UA-Compatible: Garantiza que el navegador utilice su motor de renderizado más reciente.
+     - Viewport: Optimiza la visualización en dispositivos móviles.
+   - <link>: Conecta con recursos externos.
+     - En este caso, conecta con Google Fonts para estilizar el texto del documento.
+
+3. <body>:
+   - Contiene el contenido visible y principal de la página.
+
+   Componentes principales dentro del <body>:
+
+   - <header>: Encapsula el encabezado del CV o Lebenslauf.
+     - Imagen de perfil y nombre:
+       - <div> con ID "container-img": Organiza y encapsula la imagen de perfil y el nombre del candidato.
+         - <img>: Presenta una imagen profesional, permitiendo una rápida identificación.
+         - <h1>: Da prominencia a mi nombre.
+     - Descripción profesional e información de contacto:
+       - <p>: Proporciona una breve descripción del perfil profesional.
+       - <div> con clase "address": Agrupa y estructura la información de contacto.
+         - <Address>: Semánticamente indica la dirección física.
+         - <p> para contacto y correo: Facilita la comunicación directa, ya sea por teléfono o correo electrónico.
+
+   - <main>: Encapsula el contenido principal del documento.
+     - Educación:
+       - <section> con clase "education-section": Dedica un espacio específico para detallar la educación del candidato.
+       - <h2>: Crea un título distintivo para esta sección.
+       - <div> con clase "container": Agrupa cada etapa educativa de manera ordenada y repetitiva.
+     - Experiencia Laboral:
+       - <section> con clase "emplooyees"**: Dedica un espacio específico para detallar la experiencia laboral del candidato.
+       - Cada <div> con clase "container"** en esta sección organiza de forma similar a la sección de educación.
+
+   - <footer>: Aloja elementos adicionales al final del documento.
+     - <button>: 
+       - Uno permite la función de imprimir el CV directamente, mejorando la experiencia del usuario.
+       - El otro permite cambiar entre el modo oscuro y el modo claro, lo que ayuda a la accesibilidad y preferencias visuales del usuario.
+
+4. <script>:
+   - Enlaza con el archivo de JavaScript que añade funcionalidades interactivas al documento.
+
+En resumen, este `index.html` es una representación estructurada y organizada de un Curriculum Vitae.
+Utiliza una combinación de elementos semánticos y contenedores para presentar la información de una manera clara y profesional.
+Los componentes seleccionados facilitan la legibilidad y la navegación, haciendo que el documento sea intuitivo y accesible.
+La inclusión de funcionalidades interactivas, como el botón de impresión y el cambio de modo oscuro, mejora la experiencia del usuario.
+
+
+Estructura del archivo CSS:
+
+1. body:
+   - Establece el tipo de fuente principal para todo el cuerpo del documento.
+   - Específicamente, se utiliza la fuente `'PT Sans Caption'`.
+
+2. header:
+   - Define estilos para el encabezado del CV.
+   - Agrega bordes, sombras y ajustes de color y posicionamiento para crear un diseño atractivo y distinto.
+
+3. header img:
+   - Estiliza la imagen de perfil dentro del encabezado.
+   - Define dimensiones, bordes, sombras y otras propiedades para que la imagen sea redonda y destaque.
+
+4. header h1:
+   - Personaliza el color del título principal dentro del encabezado.
+
+5. @keyframes pulsar:
+   - Define una animación para simular un efecto de "pulsación".
+   - Se utiliza para la imagen de perfil cuando el usuario coloca el cursor sobre ella.
+
+6. img:hover:
+   - Aplica la animación `pulsar` a la imagen de perfil cuando se pasa el cursor por encima.
+   
+7. section:
+   - Define un relleno alrededor de las secciones para espaciarlas adecuadamente.
+
+8. #education-grid, #work-grid:
+   - Establece un diseño en cuadrícula para las secciones de educación y experiencia laboral.
+   - Establece columnas y espacios específicos para organizar adecuadamente la información.
+
+9. .education-title:
+   - Establece un relleno a la izquierda para el título de cada entrada educativa.
+
+10. h2, h3:
+   - Centra el texto para los títulos principales y secundarios, respectivamente.
+
+11. h4:
+   - Ajusta márgenes superiores e inferiores para los títulos de cuarto nivel.
+
+12. .education-desc, .work-desc:
+   - Elimina el margen superior para las descripciones en las secciones de educación y trabajo.
+
+13. .address:
+   - Establece un diseño en cuadrícula para organizar la dirección y los detalles de contacto.
+
+14. .text-date:
+   - Agrega un pequeño margen superior para fechas.
+
+15. button:
+   - Estiliza los botones del documento, definiendo relleno, tamaño de fuente, color de fondo, bordes y otros aspectos visuales.
+
+16. .dark-theme para body y otros elementos:
+   - Define estilos para un "modo oscuro". Cuando el cuerpo tiene la clase `dark-theme`, cambia los colores de fondo y de texto para un esquema de colores oscuro.
+   - Esto mejora la visibilidad en condiciones de luz baja y puede ofrecer una experiencia visual alternativa.
+
+
+El archivo JavaScript gestiona la interactividad del currículum:
+
+1. Funcionalidad de Impresión:
+    - Un "event listener" se adjunta al botón `printButton`, permitiendo al usuario imprimir el currículum al hacer clic en él mediante la función `window.print()`.
+
+2. Control de Tema Oscuro/Claro:
+    - Se recupera la preferencia de tema previamente guardada del almacenamiento local.
+    - Al inicio, se verifica y aplica la preferencia de tema oscuro si se guardó previamente.
+    - Un "event listener" se adjunta al botón `toggleTheme` para alternar entre temas. Al hacer clic, cambia el tema y guarda la preferencia actual en el almacenamiento local.
+
+Espero sea de su agrado.
+
+Saludos.
+Juan Miguel Caberta Ramirez.
